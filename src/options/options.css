@@ -1,0 +1,23 @@
+body {
+  width: 100px;
+}
+
+#save {
+  color: #fff;
+  background: #64518a;
+  border: 1px solid #64518a;  border: 1px solid #8B7DA8;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 2px;
+  min-width: 70px;
+}
+
+#save:hover {
+  color: #333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+
+#status {
+  padding: 5px;
+}

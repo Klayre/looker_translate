@@ -93,12 +93,22 @@ function replaceOnDocument(pattern, string){
       .forEach(textNode => textNode.textContent = textNode.textContent.replace(pattern, string)));
 }
 
-function translate (language) {
-  language = "jp" // Hardcode for now <0__0>
-  for(const word in translationMap){
-    let translationRegex = new RegExp(word, "gi")
-    replaceOnDocument(translationRegex, translationMap[word][language]);
-  }
+function translate () {
+  chrome.storage.sync.get({
+    "language": "jp"
+  }, function(items) {
+    let lang = items.language
+    for(const word in translationMap){
+      const translationRegex = new RegExp(word, "gi")
+      var translation = "jp"
+      if (lang === "en"){
+        translation = word;
+      }else{
+        translation = translationMap[word][lang];
+      }
+      replaceOnDocument(translationRegex, translation);
+    }
+  });
 }
 
 translateThrottled = _.throttle(translate, 5000) // Lot's of XHR, make sure we don't murder the page
@@ -108,7 +118,7 @@ chrome.extension.sendMessage({}, function(response) {
     if (document.readyState === "complete") {
       clearInterval(readyStateCheckInterval);
       chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
-        if (msg.action == 'translate') {
+        if (msg.action === 'translate') {
           translateThrottled()
         }
       });
