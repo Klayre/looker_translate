@@ -1,1 +1,2 @@
 # looker_translate
+To add phrases or languages, go to the [translation object](https://github.com/RichardCzechowski/looker_translate/blob/master/src/inject/inject.js#L5) and add new phrases or new key-value pairs within existing phrases. This need to be moved to a database at some point, but for now it's small enough that it can stay here. Once there's more than one language I'll re-enable support for that.
