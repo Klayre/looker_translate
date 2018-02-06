@@ -3,6 +3,11 @@
 // ex: "Explore from here" before "Explore"
 
 const translationMap = {
+  "YOUR FAVORITES": {"jp": "あなたのお気に入り"},
+  "SUGGESTED FOR YOU": {"jp": "あなたへオススメ"},
+  "RECENT ACTIVITY": {"jp": "最近チェックしたコンテンツ"},
+  "SEE ALL": {"jp": "全部見る"},
+
   "Remove Fields & Filters": {"jp": "フィールドを取り消す"},
   "No filters selected.": {"jp": "フィルター無し。"},
   "Not Enough Fields": {"jp": "フィールド数が足りません。"},
@@ -37,6 +42,7 @@ const translationMap = {
   "Get dashboard LookML": {"jp": "ダッシュボードLookML"},
   "Get Derived Table LookML": {"jp": "デライブドテーブルLookML"},
   "Clear Cache & Refresh": {"jp": "キャッシュをクリア"},
+  "Shared": {"jp": "共有"},
 
 
   "Chat":  {"jp": "チャット"},
@@ -64,7 +70,6 @@ const translationMap = {
   "Popular": {"jp": "人気"},
   "Favorites": {"jp": "お気に入り"},
   "Recently Viewed": {"jp": "最近チェックしたコンテンツ"},
-  "Shared": {"jp": "共有"},
   "LookML Dashboards": {"jp": "LookMLダッシュボード"},
   "Users": {"jp": "ユーザー"},
   "Unused Content": {"jp": "使用されていないコンテンツ"},
@@ -72,7 +77,37 @@ const translationMap = {
   "Find an Explore": {"jp": "探索ページを検索"},
   "SQL Runner": {"jp": "SQLランナー"},
   "Content Validator": {"jp": "コンテンツチェッカー"},
-  "Manage LookML Projects": {"jp": "プロジェクト管理"}
+  "Manage LookML Projects": {"jp": "プロジェクト管理"},
+
+  // Admin panel
+  "General Settings": {"jp": "設定"},
+  "Labs": {"jp": "ベータ・ラボ"},
+  "Legacy Features": {"jp": "ベータ・ラボ"},
+  "Users": {"jp": "ベータ・ラボ"},
+  "Groups": {"jp": "ベータ・ラボ"},
+  "Roles": {"jp": "ベータ・ラボ"},
+  "Content Access": {"jp": "ベータ・ラボ"},
+  "User Attributes": {"jp": "ベータ・ラボ"},
+  "Connections": {"jp": "ベータ・ラボ"},
+  "Queries": {"jp": "ベータ・ラボ"},
+  "Persistent Derived Tables": {"jp": "ベータ・ラボ"},
+  "Datagroups": {"jp": "ベータ・ラボ"},
+  "Plans": {"jp": "ベータ・ラボ"},
+  "History": {"jp": "ベータ・ラボ"},
+  "External Emails": {"jp": "ベータ・ラボ"},
+  "Actions": {"jp": "ベータ・ラボ"},
+  "API": {"jp": "ベータ・ラボ"},
+  "Embed": {"jp": "ベータ・ラボ"},
+  "SMTP": {"jp": "ベータ・ラボ"},
+  "Two-Factor": {"jp": "ベータ・ラボ"},
+  "Google": {"jp": "ベータ・ラボ"},
+  "LDAP": {"jp": "ベータ・ラボ"},
+  "SAML": {"jp": "ベータ・ラボ"},
+  "Persistent Sessions": {"jp": "ベータ・ラボ"},
+  "Backup": {"jp": "ベータ・ラボ"},
+  "Load Balancing": {"jp": "ベータ・ラボ"},
+  "Log": {"jp": "ベータ・ラボ"},
+  "Usage": {"jp": "ベータ・ラボ"}
 }
 
 // Select and replace spaces, main navigation and explore page
