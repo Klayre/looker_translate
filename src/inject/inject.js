@@ -81,6 +81,7 @@ const translationMap = {
 
   // Admin panel
   "General Settings": {"jp": "設定"},
+  "Settings": {"jp": "セッティング"},
   "Labs": {"jp": "ベータ・ラボ"},
   "Legacy Features": {"jp": "レガシー機能"},
   "Users": {"jp": "ユーザー"},
@@ -99,7 +100,7 @@ const translationMap = {
   "API": {"jp": "API"},
   "Embed": {"jp": "埋め込み"},
   "SMTP": {"jp": "SMTP"},
-  "Two-Factor": {"jp": "TFA"},
+  "Two-Factor": {"jp": "2FA"},
   "Google": {"jp": "Google"},
   "LDAP": {"jp": "LDAP"},
   "SAML": {"jp": "SAML"},
@@ -113,9 +114,11 @@ const translationMap = {
 // Select and replace spaces, main navigation and explore page
 function replaceOnDocument(pattern, string){
   // lk-explore-dataflux *:not(script):not(noscript):not(style)
+  // Classes are preceded by .; ids by #; html elements with nothing.
   Array.from(document.querySelectorAll(`
       .spaces-nav *:not(script):not(noscript):not(style),
       #lk-nav-main *:not(script):not(noscript):not(style),
+      .lk-field-column-list *:not(script):not(noscript):not(style),
       lk-nav *:not(script):not(noscript):not(style),
       lk-segmented-switch *:not(script):not(noscript):not(style),
       .explore-empty-state *:not(script):not(noscript):not(style),
